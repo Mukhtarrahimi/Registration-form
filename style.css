@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(./assest/fonts/Vazir-Medium.woff);
+}
+body{
+    font-family: 'vazir', sans-serif;
+}
