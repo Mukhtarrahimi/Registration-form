@@ -24,15 +24,21 @@
         class="container p-6 bg-white rounded-2xl shadow-lg flex flex-col items-center justify-center"
       >
         <h1 class="title text-xl font-extrabold">عضویت</h1>
-        <div class="flex mt-4 gap-1 items-center">
+        <div id="signIn" class="flex mt-4 gap-1 items-center">
           <p class="text text-gray-700">قبلا ثبت نام کرده اید؟</p>
-          <button class="btn text-green-500 font-semibold cursor-pointer">
+          <button class="signINBtn text-green-500 font-semibold cursor-pointer">
             وارید شوید
+          </button>
+        </div>
+        <div id="signUp" class="flex hidden mt-4 gap-1 items-center">
+          <p class="text text-gray-700">حساب کاربری ندارید؟</p>
+          <button class="signINBtn text-green-500 font-semibold cursor-pointer">
+            ثبت نام کنید
           </button>
         </div>
         <form class="w-full mt-6 flex flex-col gap-4">
           <div
-            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+            class="userName input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
           >
             <input
               type="text"
@@ -41,16 +47,18 @@
             />
             <i class="ri-user-line text-xl text-gray-400"></i>
           </div>
+
           <div
-            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+            class="phone input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
           >
-            <input 
-              type="email"
+            <input
+              type="text"
               class="phone bg-transparent text-sm w-full outline-none border-none pe-3"
               placeholder="شماره موبایل"
             />
             <i class="ri-phone-line text-xl text-gray-400"></i>
           </div>
+
           <div
             class="email input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
           >
@@ -61,8 +69,9 @@
             />
             <i class="ri-mail-line text-xl text-gray-400"></i>
           </div>
+
           <div
-            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+            class="password input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
           >
             <input
               type="password"
@@ -71,15 +80,20 @@
             />
             <i class="ri-lock-line text-xl text-gray-400"></i>
           </div>
+
           <button
             class="sign-btn w-full h-[52px] bg-green-500 rounded-full text-white"
           >
             ثبت نام
           </button>
           <div class="hidden forgot_container">
-            <div class="flex justify-between items-center text-gray-500 text-sm">
+            <div
+              class="flex justify-between items-center text-gray-500 text-sm"
+            >
               <button class="enter_phone">ورود با موبایل</button>
-              <button class="forgot_password underline">فراموشی رمز عبور</button>
+              <button class="forgot_password underline">
+                فراموشی رمز عبور
+              </button>
             </div>
           </div>
         </form>
@@ -89,5 +103,6 @@
         اید.
       </p>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
