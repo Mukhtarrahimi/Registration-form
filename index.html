@@ -1,18 +1,87 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="./assest/img/logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style css link  -->
-  <link rel="stylesheet" href="style.css">
-  <!-- font-awesome cdn link  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Tailwindcss cdn link  -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assest/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-awesome cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwindcss cdn link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <title>ورود | ثبت نام</title>
-</head>
-<body>
-</body>
+    <title>ورود | ثبت نام</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-rose-50 to-teal-50 w-full flex flex-col items-center justify-center"
+  >
+    <div class="w-[23rem] my-10">
+      <div
+        class="container p-6 bg-white rounded-2xl shadow-lg flex flex-col items-center justify-center"
+      >
+        <h1 class="title text-xl font-extrabold">عضویت</h1>
+        <div class="flex mt-4 gap-1 items-center">
+          <p class="text text-gray-700">قبلا ثبت نام کرده اید؟</p>
+          <button class="btn text-green-500 font-semibold cursor-pointer">
+            وارید شوید
+          </button>
+        </div>
+        <form class="w-full mt-6 flex flex-col gap-4">
+          <div
+            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+          >
+            <input
+              type="text"
+              class="bg-transparent text-sm w-full outline-none border-none pe-3"
+              placeholder="نام کاربری"
+            />
+            <i class="ri-user-line text-xl text-gray-400"></i>
+          </div>
+          <div
+            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+          >
+            <input
+              type="email"
+              class="bg-transparent text-sm w-full outline-none border-none pe-3"
+              placeholder="شماره موبایل"
+            />
+            <i class="ri-phone-line text-xl text-gray-400"></i>
+          </div>
+          <div
+            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+          >
+            <input
+              type="email"
+              class="bg-transparent text-sm w-full outline-none border-none pe-3"
+              placeholder="آدرس ایمیل"
+            />
+            <i class="ri-mail-line text-xl text-gray-400"></i>
+          </div>
+          <div
+            class="input-group bg-gray-100 w-full h-[52px] flex items-center justify-between p-3 rounded-lg"
+          >
+            <input
+              type="password"
+              class="bg-transparent text-sm w-full outline-none border-none pe-3"
+              placeholder="رمز عبور"
+            />
+            <i class="ri-lock-line text-xl text-gray-400"></i>
+          </div>
+          <button
+            class="sign-btn w-full h-[52px] bg-green-500 rounded-full text-white"
+          >
+            ثبت نام
+          </button>
+        </form>
+      </div>
+      <p class="mt-6 text-center" style="font-family: 'yekan', sans-serif">
+        با عضویت در سایت، تمامی قوانین و شرایط استفاده از خدمات سایت را پذیرفته
+        اید.
+      </p>
+    </div>
+  </body>
 </html>

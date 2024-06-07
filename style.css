@@ -2,6 +2,14 @@
     font-family: 'vazir';
     src: url(./assest/fonts/Vazir-Medium.woff);
 }
+@font-face {
+    font-family: 'yekan';
+    src: url(./assest/fonts/Yekan.woff);
+}
 body{
     font-family: 'vazir', sans-serif;
+}
+
+.input-group{
+    font-family: 'yekan', sans-serif;
 }
